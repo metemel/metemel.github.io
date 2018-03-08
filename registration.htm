@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Eskişehir - Registration</title>
+</head>
+<body>
+
+<nav>
+<a href="home.htm">Homepage</a> |
+<a href="localdishes.htm">Local Dishes</a> |
+<a href="historicalplaces.htm">Historical Places</a> |
+<a href="usefullinks.htm">Useful Links</a> | 
+<a href="aboutme.htm">About Me</a> |
+<a href="contactme.htm">Contact Me</a> |
+<a style="font-size:25px;" href="registration.htm">Registration</a>
+</nav>
+
+<hr>
+<h1>Registration</h1>
+<hr>
+
+<form action="thanks.htm" method="POST">
+ <fieldset><legend>Personal information:</legend>
+  Name*:<br>
+ <input type="text" name="name" required><br>
+  Surname*:<br>
+ <input type="text" name="surname" required><br>
+   Date of Birth:<br>
+ <input type="date" name="dateofbirth"><br>
+  Gender:<br>
+ <select name="gender">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+ </select>
+ </fieldset>
+ <br>
+ <fieldset><legend>Registration:</legend>
+   E-Mail*:<br>
+ <input type="email" name="email" required><br>
+   Password*:<br>
+   <input type="password" name="password" required></fieldset>
+<br>
+  <fieldset><legend>Interest:</legend>
+ <input type="checkbox" name="interests" value="Book">Book<br>
+ <input type="checkbox" name="interests" value="Movies">Movies<br>
+ <input type="checkbox" name="interests" value="Football">Football<br>
+ <input type="checkbox" name="interests" value="Code">Code<br>
+ </fieldset>
+    <br>
+   <br>
+   
+ <input type="submit" value="Submit">
+ <input type="reset" value="Reset">
+</form>
+</body>
+</html>
