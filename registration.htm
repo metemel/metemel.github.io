@@ -21,13 +21,13 @@
 
 <form action="thanks.php" method="POST">
  <fieldset><legend>Personal information:</legend>
-  Name*:<br>
- <input type="text" name="name" required><br>
-  Surname*:<br>
- <input type="text" name="surname" required><br>
-   Date of Birth:<br>
- <input type="date" name="dateofbirth"><br>
-  Gender:<br>
+ <label for="username">  Name*:</label> <br>
+ <input type="text" name="name" id="username" required><br>
+ <label for="usersurname">  Surname*:</label><br>
+ <input type="text" name="surname" id="usersurname" required><br>
+ <label for="userdob">  Date of Birth:</label><br>
+ <input type="date" name="dateofbirth" id="userdob"><br>
+ Gender:<br>
  <select name="gender">
     <option value="Male">Male</option>
     <option value="Female">Female</option>
@@ -35,9 +35,9 @@
  </fieldset>
  <br>
  <fieldset><legend>Registration:</legend>
-   E-Mail*:<br>
- <input type="email" name="email" required><br>
-  <label for="userPassword"> Password*:</label><br>
+ <label for="usermail">  E-Mail*:</label><br>
+ <input type="email" name="email" id="usermail" required><br>
+ <label for="userPassword"> Password*:</label><br>
    <input type="password" name="password" id="userPassword" required></fieldset>
 <br>
   <fieldset><legend>Interest:</legend>
