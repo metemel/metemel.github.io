@@ -2,56 +2,74 @@
 <html>
 <head>
 <title>Eskişehir - Local Dishes</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/mycss.css">
 </head>
 <body>
+<div class="container">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false">Menu</button>
+    		</div>
+    		<div class="collapse navbar-collapse" id="main_navbar">
+	        	<ul class="nav navbar-nav">
+					<li ><a href="home.htm">Homepage</a></li>
+					<li class="active"><a href="localdishes.htm">Local Dishes</a></li>
+					<li><a href="historicalplaces.htm">Historical Places</a></li>
+					<li><a href="usefullinks.htm">Useful Links</a> </li>
+					<li><a href="aboutme.htm">About Me</a></li>
+					<li><a href="contactme.htm">Contact Me</a></li>
+					<li><a href="registration.htm">Registration</a></li>
+				</ul>
+        	</div>
+			
+		</div>
+	</nav>
+<div class="page-header"><h1>Local Dishes</h1></div>
+<div class="content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<ul class="breadcrumb">
+			<li><a href="home.htm">Home</a></li>
+			<li>Local Dıshes</li>
+		</ul>
 
-<nav>
-<a href="home.htm">Homepage</a> |
-<a style="font-size:25px;" href="localdishes.htm">Local Dishes</a> |
-<a href="historicalplaces.htm">Historical Places</a> |
-<a href="usefullinks.htm">Useful Links</a> | 
-<a href="aboutme.htm">About Me</a> |
-<a href="contactme.htm">Contact Me</a> |
-<a href="registration.htm">Registration</a>
-</nav>
-
-<hr>
-<h1>Local Dishes</h1>
-<hr>
-
-<section>
-<h2>Balaban Kofte</h2>
-<iframe style="float:left" width="580" height="330"
-src="https://www.youtube.com/embed/eFruVhtG8OY">
-</iframe>
-<figure>
-<img src="img/balaban.jpg" alt="Balaban Kofte" width="400px">
-<figcaption>Fig.1: Balaban Kofte</figcaption>
-</figure>
-</section>
-<br>
-<section>
-<h2>Ciborek</h2>
-<iframe style="float:left" width="580" height="330"
-src="https://www.youtube.com/embed/PyMErC0A9Do">
-</iframe>
-<figure>
-<img src="img/ciborek.jpg" alt="Ciborek" width="400px">
-<figcaption>Fig.2: Ciborek</figcaption>
-</figure>
-</section>
-<br>
-<br>
-<section>
-<h2>Met Helvasi</h2>
-<iframe style="float:left" width="580" height="330"
-src="https://www.youtube.com/embed/sfAaV5EGfYY">
-</iframe>
-<figure>
-<img src="img/met-helvasi.jpg" alt="Met Helvasi" width="400px">
-<figcaption>Fig.3: Met Helvasi</figcaption>
-</figure>
-</section>
-
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="img/balaban.htm">
+        <img src="img/balaban.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p>Balaban Kofte</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="img/ciborek.htm">
+        <img src="img/ciborek.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Cıborek</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="img/met-helvasi.htm">
+        <img src="img/met-helvasi.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>Met Helvasi</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+    <!-- jquery libraries -->
+    <script src="js/jquery.min.js"></script> 
+    <!-- bootsrap libraries -->
+    <script src="js/bootstrap.min.js"></script> 
 </body>
 </html>

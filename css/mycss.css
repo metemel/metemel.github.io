@@ -1,0 +1,47 @@
+body {
+	padding: 5px;
+	background-color: grey !important;
+}
+.header {
+	font-size: 20px;	
+}
+.container {
+
+}
+.page-header {
+    padding-bottom: 0px;
+    margin: 10px 0 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #e1ecff;
+}
+h1 {
+	margin: 10px 10px 10px 20px;
+}
+
+.navbar {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.content {
+    padding: 10px;
+    margin: 0px 0 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+.form-horizontal .form-group {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.breadcrump {
+	background-color: #e6e6e6;
+}
+dadada
+
+body {
+
+}

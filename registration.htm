@@ -2,55 +2,100 @@
 <html>
 <head>
 <title>Eskişehir - Registration</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/mycss.css">
 </head>
 <body>
+<div class="container">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false">Menu</button>
+    		</div>
+    		<div class="collapse navbar-collapse" id="main_navbar">
+	        	<ul class="nav navbar-nav">
+					<li><a href="home.htm">Homepage</a></li>
+					<li><a href="localdishes.htm">Local Dishes</a></li>
+					<li><a href="historicalplaces.htm">Historical Places</a></li>
+					<li><a href="usefullinks.htm">Useful Links</a> </li>
+					<li><a href="aboutme.htm">About Me</a></li>
+					<li><a href="contactme.htm">Contact Me</a></li>
+					<li class="active"><a href="registration.htm">Registration</a></li>
+				</ul>
+        	</div>
+			
+		</div>
+	</nav>
 
-<nav>
-<a href="home.htm">Homepage</a> |
-<a href="localdishes.htm">Local Dishes</a> |
-<a href="historicalplaces.htm">Historical Places</a> |
-<a href="usefullinks.htm">Useful Links</a> | 
-<a href="aboutme.htm">About Me</a> |
-<a href="contactme.htm">Contact Me</a> |
-<a style="font-size:25px;" href="registration.htm">Registration</a>
-</nav>
+	<div class="page-header"><h1>Registration</h1></div>
+	<div class="content col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-<hr>
-<h1>Registration</h1>
-<hr>
+		<ul class="breadcrumb">
+			<li><a href="home.htm">Home</a></li>
+			<li>Registration</li>
+		</ul>
 
-<form action="thanks.php" method="POST">
- <fieldset><legend>Personal information:</legend>
- <label for="username">  Name*:</label> <br>
- <input type="text" name="name" id="username" required><br>
- <label for="usersurname">  Surname*:</label><br>
- <input type="text" name="surname" id="usersurname" required><br>
- <label for="userdob">  Date of Birth:</label><br>
- <input type="date" name="dateofbirth" id="userdob"><br>
- Gender:<br>
- <select name="gender">
-    <option value="Male">Male</option>
-    <option value="Female">Female</option>
- </select>
- </fieldset>
- <br>
- <fieldset><legend>Registration:</legend>
- <label for="usermail">  E-Mail*:</label><br>
- <input type="email" name="email" id="usermail" required><br>
- <label for="userPassword"> Password*:</label><br>
-   <input type="password" name="password" id="userPassword" required></fieldset>
-<br>
-  <fieldset><legend>Interest:</legend>
- <input type="checkbox" name="interests" value="Book">Book<br>
- <input type="checkbox" name="interests" value="Movies">Movies<br>
- <input type="checkbox" name="interests" value="Football">Football<br>
- <input type="checkbox" name="interests" value="Code">Code<br>
- </fieldset>
-    <br>
-   <br>
+<form class="form-horizontal" action="thanks.php" method="POST">
+	<fieldset class="form-group"><legend>Personal information:</legend>
+		<div class="form-group">
+		    <label for="username">Name:</label>
+		    <input type="text" class="form-control" id="username">
+		</div>
+
+		<div class="form-group">
+		    <label for="surname">Surname:</label>
+		    <input type="text" class="form-control" id="surname">
+		</div>
+
+		<div class="form-group">
+		    <label for="birthdate">Date of Birth:</label>
+		    <input type="date" class="form-control" id="birthdate">
+		</div>
+
+		<div class="form-group">
+		    <label for="gender">Gender:</label>
+		    <select name="gender" id="gender" class="form-control">
+		    	<option value="Male">Male</option>
+		    	<option value="Female">Female</option>
+			</select>
+		</div>
+	</fieldset>
+
+	<fieldset class="form-group"><legend>Registration:</legend>
+		<div class="form-group">
+		    <label for="mail">E-Mail:</label>
+		    <input type="mail" class="form-control" id="mail">
+		</div>
+		<div class="form-group">
+		    <label for="password">Password:</label>
+		    <input type="password" class="form-control" id="password">
+		</div>
+	</fieldset>
+
+  <fieldset class="form-group"><legend>Interest:</legend>
+	<div class="checkbox">
+		<label><input type="checkbox" value="Book">Book</label>
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox" value="Movies">Movies</label>
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox" value="Football">Football</label>
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox" value="Code">Code</label>
+	</div>
+</fieldset>
+
    
- <input type="submit" value="Submit">
- <input type="reset" value="Reset">
+<input type="submit" value="Submit" class="btn btn-default">
+<input type="reset" value="Reset" class="btn btn-default">
 </form>
+</div>
+</div>
+    <!-- jquery libraries -->
+    <script src="js/jquery.min.js"></script> 
+    <!-- bootsrap libraries -->
+    <script src="js/bootstrap.min.js"></script> 
 </body>
 </html>

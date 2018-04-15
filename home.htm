@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Eskişehir - Homepage</title>
+	<title>Eskişehir - Homepage</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/mycss.css">
 </head>
 <body>
+<div class="container">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false" aria-controls="navbar">Menu</button>
+    		</div>
+    		<div class="collapse navbar-collapse" id="main_navbar">
+	        	<ul class="nav navbar-nav">
+					<li class="active"><a href="home.htm">Homepage</a></li>
+					<li><a href="localdishes.htm">Local Dishes</a></li>
+					<li><a href="historicalplaces.htm">Historical Places</a></li>
+					<li><a href="usefullinks.htm">Useful Links</a> </li>
+					<li><a href="aboutme.htm">About Me</a></li>
+					<li><a href="contactme.htm">Contact Me</a></li>
+					<li><a href="registration.htm">Registration</a></li>
+				</ul>
+        	</div>
+			
+		</div>
+	</nav>
+	<div class="page-header"><h1>Eskisehir</h1></div>
+	<div class="content col-lg-12">
+		<figure class="col-lg-6">
+			<img class="img-rounded" src="img/eskisehir.jpg" alt="Porsuk River in Eskişehir" width="100%">
+			<figcaption>Porsuk River in Eskişehir</figcaption>
+		</figure>
+		<article class="col-lg-6">
+			<p>Eskişehir is a city in northwestern Turkey and the capital of the Eskişehir Province. 
+			The urban population of the city is 717,135 with a metropolitan population of 826,135. 
+			The city is located on the banks of the Porsuk River, 792 m above sea level, 
+			where it overlooks the fertile Phrygian Valley. In the nearby hills one can find hot springs.</p>
+			<p>The city is 233 km (145 mi) to the west of Ankara, 330 km (205 mi) to the southeast of Istanbul 
+			and 78 km (48 mi) to the northeast of Kütahya. Known as a university town, 
+			both Eskişehir Osmangazi University and Anadolu University (which has one of the largest 
+			student enrollments in the world) are based in Eskişehir. The province covers an area of 2,678 km2</p>
+		</article>
 
-<nav>
-<a style="font-size:25px;" href="home.htm">Homepage</a> |
-<a href="localdishes.htm">Local Dishes</a> |
-<a href="historicalplaces.htm">Historical Places</a> |
-<a href="usefullinks.htm">Useful Links</a> |
-<a href="aboutme.htm">About Me</a> |
-<a href="contactme.htm">Contact Me</a> |
-<a href="registration.htm">Registration</a>
-</nav>
-
-<hr>
-<h1>Eskişehir</h1>
-<hr>
-<article>
-<figure>
-<img src="img/eskisehir.jpg" alt="Porsuk River in Eskişehir">
-<figcaption>Porsuk River in Eskişehir</figcaption>
-</figure>
-<p>Eskişehir is a city in northwestern Turkey and the capital of the Eskişehir Province. 
-The urban population of the city is 717,135 with a metropolitan population of 826,135. 
-The city is located on the banks of the Porsuk River, 792 m above sea level, 
-where it overlooks the fertile Phrygian Valley. In the nearby hills one can find hot springs.</p>
-<p>The city is 233 km (145 mi) to the west of Ankara, 330 km (205 mi) to the southeast of Istanbul 
-and 78 km (48 mi) to the northeast of Kütahya. Known as a university town, 
-both Eskişehir Osmangazi University and Anadolu University (which has one of the largest 
-student enrollments in the world) are based in Eskişehir. The province covers an area of 2,678 km2</p>
-</article>
-
+	</div>
+</div>
+    <!-- jquery libraries -->
+    <script src="js/jquery.min.js"></script> 
+    <!-- bootsrap libraries -->
+    <script src="js/bootstrap.min.js"></script> 
 </body>
 </html>
